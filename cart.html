@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: black;
+            background-color: rgb(224, 127, 48);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #d5be39;
+            color: white;
+        }
+
+        .cart-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .cart-item-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .cart-item h3 {
+            margin: 0;
+        }
+
+        .cart-item p {
+            margin: 5px 0;
+        }
+
+        .cart-item input {
+            width: 50px;
+            padding: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .cart-item .remove-btn {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cart-item .remove-btn:hover {
+            background-color: #333;
+        }
+
+        .cart-total {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .cart-total h2 {
+            font-size: 24px;
+        }
+
+        .checkout-btn {
+            display: block;
+            text-align: center;
+            background-color: #ff6347;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .checkout-btn:hover {
+            background-color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<nav>
+    <a href="projwt.html">Home</a>
+    <a href="shopus.html">Shop</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="cart-container">
+    <!-- Cart Item 1 -->
+    <div class="cart-item">
+        <img src="images (1).jpeg" alt="Kurtas">
+        <div class="cart-item-details">
+            <h3>Kurtas</h3>
+            <p>Price: 3100 rs</p>
+            <label for="quantity1">Quantity: </label>
+            <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+        </div>
+        <button class="remove-btn">Remove</button>
+    </div>
+
+    <!-- Cart Item 2 -->
+    <div class="cart-item">
+        <img src="download (5).jpeg" alt="T-shirts">
+        <div class="cart-item-details">
+            <h3>T-shirts</h3>
+            <p>Price: 3100 rs</p>
+            <label for="quantity2">Quantity: </label>
+            <input type="number" id="quantity2" name="quantity2" value="1" min="1">
+        </div>
+        <button class="remove-btn">Remove</button>
+    </div>
+
+    <!-- Cart Item 3 -->
+    <div class="cart-item">
+        <img src="download (6).jpeg" alt="Jeans">
+        <div class="cart-item-details">
+            <h3>Jeans</h3>
+            <p>Price: 3100 rs</p>
+            <label for="quantity3">Quantity: </label>
+            <input type="number" id="quantity3" name="quantity3" value="1" min="1">
+        </div>
+        <button class="remove-btn">Remove</button>
+    </div>
+
+    <!-- Cart Total -->
+    <div class="cart-total">
+        <h2>Total: 9300 rs</h2>
+    </div>
+
+    <button class="checkout-btn">Proceed to Checkout</button>
+</div>
+
+</body>
+</html>
